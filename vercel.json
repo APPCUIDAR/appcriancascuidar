@@ -9,6 +9,10 @@
             "destination": "/admin/$1"
         },
         {
+            "source": "/evidence/:id",
+            "destination": "/evidence/[id].html"
+        },
+        {
             "source": "/(.*)",
             "destination": "/$1"
         }
