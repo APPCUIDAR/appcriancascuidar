@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "buildCommand": "cd admin-panel && npm install && npm run build",
+    "outputDirectory": "admin-panel/.next",
+    "framework": "nextjs",
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/admin-panel/$1"
+        }
+    ]
+}
