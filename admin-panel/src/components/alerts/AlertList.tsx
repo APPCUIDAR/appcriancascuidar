@@ -7,7 +7,8 @@ import {
     PhoneCall,
     Clock,
     CheckCircle,
-    ExternalLink
+    ExternalLink,
+    MessageSquare
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { supabase } from '@/lib/supabase';

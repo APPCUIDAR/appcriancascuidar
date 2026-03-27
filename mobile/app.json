@@ -26,7 +26,14 @@
       "package": "com.anonymous.mobile"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "display": "standalone",
+      "orientation": "portrait",
+      "name": "System Core Dashboard",
+      "shortName": "Calculadora",
+      "lang": "pt-BR",
+      "backgroundColor": "#000000",
+      "themeColor": "#000000"
     }
   }
 }

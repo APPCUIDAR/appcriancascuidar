@@ -147,7 +147,7 @@ export default function ChildDossier({ childId }: { childId: string }) {
                                         <div className="bg-amber-600/10 p-3 rounded-xl text-amber-500">
                                             <Gamepad2 size={24} />
                                         </div>
-                                        {game.flags > 0 && (
+                                        {game.flags && game.flags > 0 && (
                                             <span className="bg-red-600 text-[10px] font-black px-2 py-1 rounded-lg animate-pulse">
                                                 {game.flags} FLAGS
                                             </span>

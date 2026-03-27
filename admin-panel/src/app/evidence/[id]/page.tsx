@@ -3,7 +3,7 @@
 import { EvidenceTimeline } from "@/components/alerts/EvidenceTimeline";
 import React from 'react';
 
-export default function EvidencePage({ params }: { params: { id: string } }) {
+export default function EvidencePage({ params }: { params: Promise<{ id: string }> }) {
     // Em Next.js App Router, params é uma promise para as rotas dinâmicas
     const { id } = React.use(params);
 

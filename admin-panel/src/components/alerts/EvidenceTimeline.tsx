@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { generateJudicialDossie } from '@/lib/dossieGenerator';
+import { supabase } from '@/lib/supabase';
 
 
 const MOCK_EVIDENCE = [

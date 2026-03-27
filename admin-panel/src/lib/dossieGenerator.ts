@@ -1,4 +1,5 @@
 import { jsPDF } from 'jspdf';
+// @ts-ignore
 import QRCode from 'qrcode';
 
 export async function generateJudicialDossie(caseData: any) {

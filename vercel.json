@@ -1,12 +1,16 @@
 {
     "version": 2,
-    "buildCommand": "cd admin-panel && npm install && npm run build",
-    "outputDirectory": "admin-panel/.next",
-    "framework": "nextjs",
+    "buildCommand": "cd admin-panel && npm install && npm run build && cd ../mobile && npm install && npx expo export --output-dir ../dist && cd .. && mkdir -p dist/admin && cp -rv admin-panel/out/* dist/admin/",
+    "outputDirectory": "dist",
+    "cleanUrls": true,
     "rewrites": [
         {
+            "source": "/admin/(.*)",
+            "destination": "/admin/$1"
+        },
+        {
             "source": "/(.*)",
-            "destination": "/admin-panel/$1"
+            "destination": "/$1"
         }
     ]
 }

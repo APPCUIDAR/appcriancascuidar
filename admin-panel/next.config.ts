@@ -1,9 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    allowedHosts: ['all']
-  }
+  output: 'export',
+  images: { unoptimized: true }
 };
 
 export default nextConfig;
